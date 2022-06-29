@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 57px;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
