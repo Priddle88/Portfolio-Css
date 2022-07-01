@@ -96,13 +96,15 @@ h2 {
 .myWork {
     display: flex;
     align-items: center;
-    padding: 40px;
+    padding: 4px;
     background-color: #ffffea;
 }
 
 /* Make myWork title take up 20% of the screen */
 .myWork h2 {
     width: 20%;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 /* I realized I Could have kept this section of the page displayed with flex but I 
@@ -123,15 +125,18 @@ I also wanted to make sure that there is enough spacing for the placeholders */
     padding-left: 70px;
 } */
 
-.gridLayout {
+/* Made the portfolio section take up 80% of the width and wrap */
+.folio {
     display: flex;
     width: 80%;
     flex-wrap: wrap;
     border-left: 4px solid black;
-    padding-left: 60px;
+    padding-left: 10px;
+    justify-content: center;
 }
 
-.gridLayout h3 {
+/* Titles to the portfolios */
+.folio h3 {
     width: 20%;
     position: relative;
     top: 65px;
@@ -142,12 +147,26 @@ I also wanted to make sure that there is enough spacing for the placeholders */
     background-color:#ffffea;
 }
 
-.gridLayout img {
-    padding: 20px;
+/* the images for the portfolios */
+.folio img {
+    border: 4px solid black;
+    margin: 20px;
 }
 
-.gridLayout img:hover {
-    width: 210px;
+/* the div tag for the main portfolio (Application 1) */
+.bigBlock {
+    width: 100%;
+}
+
+/* Image for the main portfolio (Application 1) */
+.bigApp {
+    width: 75%;
+}
+
+
+/* effects when hovering over the portfolio images */
+.folio img:hover {
+    min-width: 210px;
     box-shadow: 10px 10px 10px;
     margin: 10px;
 
@@ -177,13 +196,28 @@ I also wanted to make sure that there is enough spacing for the placeholders */
 }
 
 /* CSS for screen width under 654px */
-@media screen and (max-width: 654px){
+@media screen and (max-width: 684px){
 
     /* Places my image to the right of my name */
     .heading img {
         position: relative;
         top: 0;
         left: 0;
+    }
+
+    /* Adjust portfolio images to screen width */
+    .folio img {
+        padding: 0;
+    }
+
+    /* Adjust for screen width. Removes the padding */
+    .folio {
+        padding-left: 0px;
+    }
+
+    /* Changes the sizes for the images below the main portfolio */
+    .smApp {
+        width: 150px;
     }
 }
 /* CSS for screen width under 460px */    
@@ -253,7 +287,7 @@ I also wanted to make sure that there is enough spacing for the placeholders */
 
     /* Switches the grid to flex. I undid a bunch of the properties from the grid css above.
     I centered the placeholder images. */
-    .gridLayout {
+    .folio {
         display: flex;
         border-left: 0;
         border-top: 4px solid black;
@@ -266,13 +300,31 @@ I also wanted to make sure that there is enough spacing for the placeholders */
         overflow: auto;
     }
 
+    /* Main image for portfolio #1 */
+    .bigApp {
+        width: 200px;
+    }
+
     /* Added spacing in between the images */
-    .gridLayout img {
-        padding-top: 30px;
+    .folio img {
+        margin-top: 30px;
     }
 
     /* Makes more room for contact info */
     .info {
         padding-left: 20px;
+        overflow-wrap: anywhere;
+    }
+}
+@media screen and (max-width: 270px){
+    .bigBlock {
+        width:auto;
+    }
+    .folio img {
+        display: none;
+    }
+    .folio h3 {
+        top: 0;
+        left: 0;
     }
 }
