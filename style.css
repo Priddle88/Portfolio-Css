@@ -147,6 +147,7 @@ I also wanted to make sure that there is enough spacing for the placeholders */
     background-color:#ffffea;
 }
 
+/* Removes the default text decoration for a link */
 .folio a {
     text-decoration: none;
     color: black;
