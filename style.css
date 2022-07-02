@@ -107,9 +107,11 @@ h2 {
     padding-left: 10px;
 }
 
-/* I realized I Could have kept this section of the page displayed with flex but I 
-wanted to practice grid and try it out. I want the grid to take up the rest of the width of the page so 80%.
-I also wanted to make sure that there is enough spacing for the placeholders */
+/* This is where I tried using grid. It was great until I wanted to scale and make the first image larger than the rest.
+ I knew the amount of lines I was writing could be condensed with flex so I swtiched.
+ The class gridLayout was replaced with folio after witching to flex to reduce confusion. 
+ I kept the code here for you to see. */
+ 
 /* .gridLayout {
     display: grid;
     width: 80%;
