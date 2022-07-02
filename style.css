@@ -134,7 +134,7 @@ h2 {
     flex-wrap: wrap;
     border-left: 4px solid black;
     padding-left: 10px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 /* Titles to the portfolios */
@@ -158,7 +158,7 @@ h2 {
 /* the images for the portfolios */
 .folio img {
     border: 4px solid black;
-    margin: 20px;
+    margin: 35px;
 }
 
 /* the div tag for the main portfolio (Application 1) */
@@ -172,6 +172,10 @@ h2 {
     max-width: 600px;
 }
 
+/* Changes the sizes for the images below the main portfolio */
+.smApp {
+    width: 65%;
+}
 
 /* effects when hovering over the portfolio images */
 .folio img:hover {
@@ -224,10 +228,6 @@ h2 {
         padding-left: 0px;
     }
 
-    /* Changes the sizes for the images below the main portfolio */
-    .smApp {
-        width: 150px;
-    }
 }
 /* CSS for screen width under 460px */    
 @media screen and (max-width: 460px){
