@@ -147,6 +147,11 @@ I also wanted to make sure that there is enough spacing for the placeholders */
     background-color:#ffffea;
 }
 
+.folio a {
+    text-decoration: none;
+    color: black;
+}
+
 /* the images for the portfolios */
 .folio img {
     border: 4px solid black;
@@ -300,11 +305,6 @@ I also wanted to make sure that there is enough spacing for the placeholders */
         overflow: auto;
     }
 
-    /* Main image for portfolio #1 */
-    .bigApp {
-        width: 200px;
-    }
-
     /* Added spacing in between the images */
     .folio img {
         margin-top: 30px;
@@ -317,14 +317,25 @@ I also wanted to make sure that there is enough spacing for the placeholders */
     }
 }
 @media screen and (max-width: 270px){
+    /* Fixing the screen to size */
     .bigBlock {
-        width:auto;
+        width: auto;
     }
+
+    /* hiding the portfolio images */
     .folio img {
         display: none;
     }
+
+    /* Displaying the portfolio titles */
     .folio h3 {
         top: 0;
         left: 0;
+    }
+
+    /* Adds an effect when hovering over the nav links */
+    .folio h3:hover {
+        text-decoration: underline;
+        background-color: rgb(112, 109, 109);
     }
 }
