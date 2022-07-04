@@ -209,7 +209,7 @@ h2 {
 
 /* added padding for the contact info */
 .info p {
-    padding: 2px;
+    padding: 10px;
 }
 
 /* CSS for screen width under 654px */
