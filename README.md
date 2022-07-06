@@ -26,7 +26,7 @@ I originally planned to design the layout of this section with a grid format. I 
 
 I centered the header ("Contact Info") and seperated the html below with a div tag. I did the same as before toswitch from vertical to horizontal (inline) and back (block).
 
-[Link to my webpage](https://priddle88.github.io/Portfolio-Css/index.html)
+[Link to my webpage](https://priddle88.github.io/Portfolio-Css/assets/index.html)
 
 ![Top portion photo of page](./images/Screen%20Shot%202022-07-03%20at%207.47.55%20PM.png)
 ![Bottom half of the page](./images/Screen%20Shot%202022-07-03%20at%207.48.32%20PM.png)
