@@ -1,7 +1,7 @@
 /* Added border on the sides of the body */
 body {
- border-left: 4px solid black;
- border-right: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
 }
 
 /* Border around header */
@@ -13,7 +13,6 @@ header {
 .heading {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 10px;
     background-color: black;
 }
 
@@ -24,6 +23,7 @@ header img {
     left: 120px;
     top: 11px;
     border: 4px solid black;
+    margin-top: 15px
 }
 
 /* Placement and color of my name in the heading */
@@ -52,9 +52,12 @@ header li {
 
 /* Removes the default link decoration */
 li a {
-    color:white;
+    color: white;
     text-decoration: none;
     font-size: 18px;
+    border: 2px solid white;
+    padding: 8px;
+    margin-right: -27px;
 }
 
 /* Underlines the links when user hovers over them */
@@ -111,7 +114,7 @@ h2 {
  I knew the amount of lines I was writing could be condensed with flex so I swtiched.
  The class gridLayout was replaced with folio after witching to flex to reduce confusion. 
  I kept the code here for you to see. */
- 
+
 /* .gridLayout {
     display: grid;
     width: 80%;
@@ -146,7 +149,11 @@ h2 {
     border: 4px solid black;
     padding: 5px;
     width: fit-content;
-    background-color:#ffffea;
+    background-color: #ffffea;
+}
+
+.lilBlock {
+    width: 50%;
 }
 
 /* Removes the default text decoration for a link */
@@ -174,7 +181,7 @@ h2 {
 
 /* Changes the sizes for the images below the main portfolio */
 .smApp {
-    width: 65%;
+    width: 315px;
 }
 
 /* effects when hovering over the portfolio images */
@@ -188,7 +195,7 @@ h2 {
 .contact {
     border-top: 4px solid black;
     border-bottom: 4px solid black;
-    background-color:  black;
+    background-color: black;
     color: #ffffea;
 }
 
@@ -212,14 +219,23 @@ h2 {
     padding: 10px;
 }
 
+@media screen and (max-width: 935px) {
+
+    .lilBlock {
+        width: 100%;
+    }
+
+}
+
 /* CSS for screen width under 654px */
-@media screen and (max-width: 684px){
+@media screen and (max-width: 684px) {
 
     /* Places my image to the right of my name */
     .heading img {
         position: relative;
         top: 0;
         left: 0;
+        margin-top: 0;
     }
 
     /* Adjust portfolio images to screen width */
@@ -233,11 +249,12 @@ h2 {
     }
 
 }
-/* CSS for screen width under 460px */    
-@media screen and (max-width: 460px){
+
+/* CSS for screen width under 460px */
+@media screen and (max-width: 460px) {
 
     /* Switches the heading section from horizontal to vertical */
-    .heading{
+    .heading {
         display: block;
         text-align: center;
         margin-bottom: 0px;
@@ -252,6 +269,7 @@ h2 {
     /* My picture cannot be larger than 100px */
     .heading img {
         max-width: 100px;
+        margin-top: 15px;
     }
 
     /* Centers and switches the nav bar to be vertical */
@@ -269,6 +287,12 @@ h2 {
     li:hover {
         text-decoration: underline;
         background-color: rgb(112, 109, 109);
+    }
+
+    li a {
+        border: 0;
+        padding: 0;
+        margin-right: 0;
     }
 
     /* Switches the about section to vertical */
@@ -324,7 +348,9 @@ h2 {
         overflow-wrap: anywhere;
     }
 }
-@media screen and (max-width: 270px){
+
+@media screen and (max-width: 270px) {
+
     /* Fixing the screen to size */
     .bigBlock {
         width: auto;
